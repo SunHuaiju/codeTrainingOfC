@@ -3,12 +3,12 @@ In the first chapter, what mainly I knew is how to start a basic cpp code. I lea
 
 I also encountered some noteworthy code here. There is an example in eg05.cpp:
 ```cpp
-    int sum = 0, val = 0;
-	while (cin >> val)
-	{
-		sum += val;
-	}
-	cout << "Sum is: " << sum << endl;
+int sum = 0, val = 0;
+while (cin >> val)
+{
+	sum += val;
+}
+cout << "Sum is: " << sum << endl;
 ```
 **When using an istream object as the judgement condition, the effect is to detect the state of stream. If the stream is valid, then the detection is successful. However, when the code get an end-of-file or invalid input from stream, the state of istream object will be invalid. Then the judgement condition will get false.**
 
