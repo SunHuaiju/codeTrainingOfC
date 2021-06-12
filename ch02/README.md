@@ -32,3 +32,23 @@ int main()
 }
 ```
 When a program has the same variable from the inner scope and the outer scope, compiler will firstly access the variable from inner scope. If you want to explicitly access global variable, Please use **'::'** before variable to make it.
+
+### Reference and pointer
+Reference means an object is called an another name.
+```cpp
+#include<iostream>
+int main()
+{
+	using namespace std;
+	int ival = 1024;
+	int &reival = ival;
+	int i = reival;
+	cout << &reival << endl;
+	cout << &ival << endl;
+	cout << &i << endl;
+	getchar();
+	getchar();
+	return 0;
+}
+```
+Reference is not an object, insteadly, it just is another name for existing object such as ```ival``` and ```reival```. **And definite the reference of reference if not allowed.**
